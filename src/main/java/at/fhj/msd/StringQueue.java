@@ -18,9 +18,9 @@ public class StringQueue implements Queue{
     }
 
     @Override
-    public boolean offer(String obj) {
+    public boolean offer(Object obj) {
         if(elements.size()!= maxSize)
-            elements.add(obj);
+            elements.add(String.class.cast(obj));
         else
             return false;
 
