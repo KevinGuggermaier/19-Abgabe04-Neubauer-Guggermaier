@@ -8,9 +8,9 @@
 - [x] add the template of the Queue implementation (Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue )
 - [ ] Go through the tasks step by step
     - [ ] commit all changes
-- [ ] correct the code
-    - [ ] find three mistakes
-    - [ ] optimise queue if necessary
+- [x] correct the code
+    - [x] find three mistakes
+    - [x] optimise queue if necessary
 - [ ] add JavaDoc documentation for the whole project
     - [ ] add a picture of the generated documentation in the report
 - [ ] add JUnit Tests
@@ -21,7 +21,7 @@
     - [x] plugin for compiling
     - [x] plugin for documentation
     - [x] developer information
-    - [ ] log4j library with dependencies
+    - [x] log4j library with dependencies
 - [ ] log4j: add every Method in the log
     - [ ] static logger for writing on the console
     - [ ] configure the logger via a properties file
@@ -31,14 +31,14 @@
 - [ ] Maven site documentation
     - [ ] with JavaDoc code and JavaDoc test classes
     - [ ] including a menu with links to the manual generated pages
-     - [ ] page shows the functionality of a queue
+       - [ ] page shows the functionality of a queue
     - [ ] put a picture of the maven site documentation in the report
-     - [ ] content of the manual generated page has to be obvious
+       - [ ] content of the manual generated page has to be obvious
     - [ ] Markdown lab report
     - [ ] like the template
     - [ ] all steps included
     - [ ] Github flavor:
-     - [ ] three lines python and java source code correct pictured
+       - [ ] three lines python and java source code correct pictured
     - [ ] generate a pdf
 
 #### Project Information ####
