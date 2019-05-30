@@ -1,5 +1,7 @@
 package at.fhj.msd;
 
+import java.util.NoSuchElementException;
+
 public interface Queue {
 
     /**
@@ -23,7 +25,7 @@ public interface Queue {
      *
      * @return
      */
-    public abstract String remove() throws Exception;
+    public abstract String remove() throws NoSuchElementException;
 
     /**
      *  Returns the head element but it does not delete it. That is, we can get it again.
@@ -37,6 +39,6 @@ public interface Queue {
      *  It throws NoSuchElementException when the queue is empty.
      * @return
      */
-    public abstract String element() throws Exception;
+    public abstract String element() throws NoSuchElementException;
 
 }
