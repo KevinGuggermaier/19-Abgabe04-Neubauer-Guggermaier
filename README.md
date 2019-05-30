@@ -5,7 +5,7 @@
     Dominik Neubauer
 #### Task list: ####
 - [x] transfer the task list to the Markdown Readme
-- [ ] add the template of the Queue implementation (Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue )
+- [x] add the template of the Queue implementation (Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue )
 - [ ] Go through the tasks step by step
     - [ ] commit all changes
 - [ ] correct the code
@@ -18,9 +18,9 @@
     - [ ] generate JavaDoc comments
     - [ ] add a picture of the generated documentation in the report
 - [ ] update the pom.xml
-    - [ ] plugin for compiling
-    - [ ] plugin for documentation
-    - [ ] developer information
+    - [x] plugin for compiling
+    - [x] plugin for documentation
+    - [x] developer information
     - [ ] log4j library with dependencies
 - [ ] log4j: add every Method in the log
     - [ ] static logger for writing on the console
