@@ -94,5 +94,59 @@ public class StringQueueTest {
         stringQueue.poll();
         stringQueue.poll();
         Assert.assertEquals(5,stringQueue.filling(),0.000001);
+<<<<<<< HEAD
+=======
+    }
+
+    @Test(expected = NoSuchElementException.class)
+    public void removeTest1() {
+        stringQueue.remove();
+    }
+
+    @Test
+    public void removeTest2() {
+        stringQueue.offer("head");
+        stringQueue.offer("placeholder");
+        stringQueue.remove();
+        Assert.assertTrue(stringQueue.remove().equals("placeholder"));
+    }
+
+    @Test
+    public void peekTest1() {
+        stringQueue.offer("head");
+        stringQueue.offer("placeholder");
+        stringQueue.offer("placeholder");
+        Assert.assertTrue(stringQueue.peek().equals("head"));
+    }
+
+    @Test
+    public void peekTest2() {
+        stringQueue.offer("head");
+        stringQueue.offer("placeholder");
+        stringQueue.offer("placeholder");
+        stringQueue.remove();
+        stringQueue.remove();
+        stringQueue.remove();
+        Assert.assertTrue(stringQueue.peek() == null);
+    }
+
+    @Test
+    public void elementTest1() {
+        stringQueue.offer("head");
+        stringQueue.offer("placeholder");
+        stringQueue.offer("placeholder");
+        Assert.assertTrue(stringQueue.element().equals("head"));
+    }
+
+    @Test(expected = NoSuchElementException.class)
+    public void elementTest2() {
+        stringQueue.offer("head");
+        stringQueue.offer("placeholder");
+        stringQueue.offer("placeholder");
+        stringQueue.remove();
+        stringQueue.remove();
+        stringQueue.remove();
+        stringQueue.element();
+>>>>>>> 12b404c6b4e3f6aec83ba9216dd0b3b8381859a5
     }
 }
