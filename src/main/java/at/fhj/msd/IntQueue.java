@@ -30,6 +30,7 @@ import java.util.NoSuchElementException;
  * @author Kevin Guggermaier
  * @author Dominik Neubauer
  * @version 1.0
+ * @see at.fhj.msd.Queue
  */
 public class IntQueue implements Queue {
 

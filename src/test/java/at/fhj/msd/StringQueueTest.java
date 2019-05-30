@@ -104,7 +104,10 @@ public class StringQueueTest {
         stringQueue.poll();
         stringQueue.poll();
         Assert.assertEquals(5,stringQueue.filling(),0.000001);
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1a3b26430a8e25af0492173e5d724112c32ea44
     }
 
     /**
