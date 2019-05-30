@@ -22,14 +22,14 @@ public interface Queue {
      * @param obj <br>Type:String <br> Value wich is added to the queue
      * @return true or false
      */
-    public abstract boolean offer(String obj);
+    public abstract boolean offer(Object obj);
 
     /**
      *  Returns the head (first) element and also deletes it. That is, we cannot get it again.
      *  If no element exists (when queue is empty), the method returns null.
      * @return <ul><li>first element when Queue is not empty</li><li>null when Queue is empty</li></ul>
      */
-    public abstract String poll();
+    public abstract <T> T poll();
 
     /**
      * It also returns and deletes the head element like poll(), but with a small difference.
@@ -37,21 +37,21 @@ public interface Queue {
      *
      * @return first element from the Queue
      */
-    public abstract String remove() throws NoSuchElementException;
+    public abstract <T> T remove() throws NoSuchElementException;
 
     /**
      *  Returns the head element but it does not delete it. That is, we can get it again.
      *  Returns null when the queue is empty.
      * @return <ul><li>first element when Queue is not empty</li><li>null when Queue is empty</li></ul>
      */
-    public abstract String peek();
+    public abstract <T> T peek();
 
     /**
      *  It works similar to peek() but with a small difference (returns but does not delete the element).
      *  It throws NoSuchElementException when the queue is empty.
      * @return first element from the Queue
      */
-    public abstract String element() throws NoSuchElementException;
+    public abstract <T> T element() throws NoSuchElementException;
 
     /**
      * To get the maximum size of the queue
