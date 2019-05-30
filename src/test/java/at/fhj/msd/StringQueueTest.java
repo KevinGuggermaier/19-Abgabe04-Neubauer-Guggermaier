@@ -81,7 +81,7 @@ public class StringQueueTest {
         }
         stringQueue.poll();
         stringQueue.poll();
-        Assert.assertEquals(5,stringQueue.size(),0.000001);
+        Assert.assertEquals(5,stringQueue.filling(),0.000001);
 
     }
 }

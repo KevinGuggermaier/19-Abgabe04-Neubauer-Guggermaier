@@ -4,15 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
-
+/**
+ * <h1>Class: StringQueue</h1>
+ * <p>
+ *  To implement the data structure queue. You can only insert data from
+ *  data type String. All necessary methods are implemented to work with this queue.
+ *  <br>Class StringQueue implements interface Queue.
+ * </p>
+ *
+ * <h2>Class variables</h2>
+ * <ul>
+ *     <li><h3>element</h3>
+ *      <ul>
+ *          <li>Datatyp: List String</li>
+ *          <li>Info: includes all the data from the queue</li>
+ *      </ul>
+ *     </li>
+ *     <li><h3>maxSize</h3>
+ *         <ul>
+ *             <li>Datatyp: Integer</li>
+ *             <li>Info: to set the size of the queue</li>
+ *         </ul>
+ *     </li>
+ * </ul>
+ * @author Kevin Guggermaier
+ * @author Dominik Neubauer
+ * @version 1.0
+ */
 public class StringQueue implements Queue{
 
     private List<String> elements = new ArrayList<String>();
     private int maxSize;
 
+    /**
+     * Constructor from class StringQueue with one transfer parameter
+     * @param   maxSize to set the size from the queue
+     */
     public StringQueue(int maxSize){
         this.maxSize = maxSize;
     }
