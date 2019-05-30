@@ -1,7 +1,6 @@
 package at.fhj.msd;
 
 import org.junit.*;
-
 import java.util.NoSuchElementException;
 
 /**
