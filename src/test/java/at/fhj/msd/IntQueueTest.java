@@ -1,10 +1,14 @@
 package at.fhj.msd;
 
+import org.junit.*;
+
 public class IntQueueTest {
 
+    private Queue intQueue;
 
-    /**
-     * TODO Write your own tests
-     */
+    @Before
+    public void setup() {
+        intQueue = new StringQueue(10);
+    }
 
 }

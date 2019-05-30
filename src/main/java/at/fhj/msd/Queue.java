@@ -41,4 +41,15 @@ public interface Queue {
      */
     public abstract String element() throws NoSuchElementException;
 
+    /**
+     * Returns only the maximal size of the queue.
+     * @return
+     */
+    public abstract int size();
+
+    /**
+     * Returns the amount of elements which are already inserted in the queue.
+     * @return
+     */
+    public abstract int filling();
 }

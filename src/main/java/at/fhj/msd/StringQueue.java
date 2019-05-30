@@ -13,7 +13,7 @@ public class StringQueue implements Queue{
     private List<String> elements = new ArrayList<String>();
     private int maxSize;
 
-    public StringQueue(int maxsize){
+    public StringQueue(int maxSize){
         this.maxSize = maxSize;
     }
 
@@ -67,4 +67,13 @@ public class StringQueue implements Queue{
         return element;
     }
 
+    @Override
+    public int size() {
+        return maxSize;
+    }
+
+    @Override
+    public int filling() {
+        return elements.size();
+    }
 }
