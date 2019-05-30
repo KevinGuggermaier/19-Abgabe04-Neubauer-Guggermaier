@@ -4,10 +4,32 @@ import org.junit.*;
 
 import java.util.NoSuchElementException;
 
+/**
+ * <h1>Class: StringQueueTest</h1>
+ * <p>
+ *  Includes test methods to test the methods from class StringQueue in different variants
+ * </p>
+ *
+ * <h2>Class variables</h2>
+ *  <ul>
+ *      <li><h3>stringQueue</h3>
+ *       <ul>
+ *           <li>Datatyp: Queue</li>
+ *           <li>Info: object from class Queue</li>
+ *       </ul>
+ *      </li>
+ * </ul>
+ * @author Kevin Guggermaier
+ * @author Dominik Neubauer
+ * @version 1.0
+ */
 public class StringQueueTest {
 
     private Queue stringQueue;
 
+    /**
+     * Creates an object from class StringQueue to prepare the test
+     */
     @Before
     public void setup() {
         stringQueue = new StringQueue(10);
@@ -104,10 +126,6 @@ public class StringQueueTest {
         stringQueue.poll();
         stringQueue.poll();
         Assert.assertEquals(5,stringQueue.filling(),0.000001);
-<<<<<<< HEAD
-
-=======
->>>>>>> b1a3b26430a8e25af0492173e5d724112c32ea44
     }
 
     /**
