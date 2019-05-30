@@ -44,34 +44,42 @@ public class StringQueueTest {
     }
 
     /**
-     * Insert 10 elements into the Queue and check if there are 10 elements in it.
+     * Insert one element to the empty queue
      */
     @Test
     public void offerTest1() {
         Assert.assertTrue(stringQueue.offer("offerTest1"));
     }
 
+    /**
+     * Insert 10 elements to the queue and then add one more element to the queue to check
+     * if the method offer returns False
+     */
     @Test
     public void offerTest2() {
-        //! adds ten placeholders to the string queue in order to fill it full
         for(int i = 0; i < 10; i++) {
             stringQueue.offer("placeholder");
         }
         Assert.assertFalse(stringQueue.offer("offerTest2"));
     }
 
+    /**
+     * First insert 9 elements to the queue and then add one more element to the queue to check
+     * if the method offer returns True
+     */
     @Test
     public void offerTest3() {
-        //! adds nine placeholders to the string queue
         for(int i = 0; i < 9; i++) {
             stringQueue.offer("placeholder");
         }
         Assert.assertTrue(stringQueue.offer("offerTest1"));
     }
 
+    /**
+     * Add seven elements to the queue and then check if all elements have been inserted in the right way
+     */
     @Test
     public void pollTest1() {
-        //! adds seven placeholders to the string queue
         for(int i = 0; i < 7; i++) {
             if(i == 0)
                 stringQueue.offer("I'm the head");
@@ -81,10 +89,12 @@ public class StringQueueTest {
         Assert.assertTrue(stringQueue.poll().equals("I'm the head"));
     }
 
-
+    /**
+     * Add seven elements to the queue, remove two elements and the check if there is the right amount of
+     * elements in the queue
+     */
     @Test
     public void fillingTest3() {
-        //! adds seven placeholders to the string queue
         for(int i = 0; i < 7; i++) {
             if(i == 0)
                 stringQueue.offer("I'm the head");
@@ -94,15 +104,20 @@ public class StringQueueTest {
         stringQueue.poll();
         stringQueue.poll();
         Assert.assertEquals(5,stringQueue.filling(),0.000001);
-<<<<<<< HEAD
-=======
+
     }
 
+    /**
+     * Remove an element from an empty queue
+     */
     @Test(expected = NoSuchElementException.class)
     public void removeTest1() {
         stringQueue.remove();
     }
 
+    /**
+     * Add two elements to the queue and then remove one element
+     */
     @Test
     public void removeTest2() {
         stringQueue.offer("head");
@@ -111,6 +126,10 @@ public class StringQueueTest {
         Assert.assertTrue(stringQueue.remove().equals("placeholder"));
     }
 
+    /**
+     * Add three element to the queue and check if the first element is the same like the first which has been inserted
+     * first
+     */
     @Test
     public void peekTest1() {
         stringQueue.offer("head");
@@ -119,6 +138,9 @@ public class StringQueueTest {
         Assert.assertTrue(stringQueue.peek().equals("head"));
     }
 
+    /**
+     * Add three elements to the queue and then remove three elements from the queue
+     */
     @Test
     public void peekTest2() {
         stringQueue.offer("head");
@@ -130,6 +152,10 @@ public class StringQueueTest {
         Assert.assertTrue(stringQueue.peek() == null);
     }
 
+    /**
+     * Add three elements to the queue and then check if the first element have the same value like the element
+     * which have been inserted first
+     */
     @Test
     public void elementTest1() {
         stringQueue.offer("head");
@@ -138,6 +164,10 @@ public class StringQueueTest {
         Assert.assertTrue(stringQueue.element().equals("head"));
     }
 
+    /**
+     * Add three elements to the queue then remove three elements.
+     * After that get the head element
+     */
     @Test(expected = NoSuchElementException.class)
     public void elementTest2() {
         stringQueue.offer("head");
@@ -147,6 +177,5 @@ public class StringQueueTest {
         stringQueue.remove();
         stringQueue.remove();
         stringQueue.element();
->>>>>>> 12b404c6b4e3f6aec83ba9216dd0b3b8381859a5
     }
 }
