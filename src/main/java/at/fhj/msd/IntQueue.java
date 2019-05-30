@@ -4,6 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * <h1>Class: IntQueue</h1>
+ * <p>
+ *  To implement the data structure queue. You can only insert data from
+ *  data type Integer. All necessary methods are implemented to work with this queue.
+ *  <br>Class IntQueue implements interface Queue.
+ * </p>
+ *
+ * <h2>Class variables</h2>
+ * <ul>
+ *     <li><h3>element</h3>
+ *      <ul>
+ *          <li>Datatyp: List Integer</li>
+ *          <li>Info: includes all the data from the queue</li>
+ *      </ul>
+ *     </li>
+ *     <li><h3>maxSize</h3>
+ *         <ul>
+ *             <li>Datatyp: Integer</li>
+ *             <li>Info: to set the size of the queue</li>
+ *         </ul>
+ *     </li>
+ * </ul>
+ * @author Kevin Guggermaier
+ * @author Dominik Neubauer
+ * @version 1.0
+ */
 public class IntQueue implements Queue {
 
     private List<Integer> elements = new ArrayList<Integer>();
