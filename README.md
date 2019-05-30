@@ -23,10 +23,10 @@
     - [x] developer information
     - [x] log4j library with dependencies
 - [ ] log4j: add every Method in the log
-    - [ ] static logger for writing on the console
-    - [ ] configure the logger via a properties file
-    - [ ] info log-message always when a method is called
-    - [ ] error log-message always when a bug appears
+    - [x] static logger for writing on the console
+    - [x] configure the logger via a properties file
+    - [x] info log-message always when a method is called
+    - [x] error log-message always when a bug appears
     - [ ] results (from the console) in form of a picture in the documentation
 - [ ] Maven site documentation
     - [ ] with JavaDoc code and JavaDoc test classes
