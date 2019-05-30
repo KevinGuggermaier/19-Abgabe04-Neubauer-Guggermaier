@@ -13,29 +13,39 @@ public class StringQueueTest {
         stringQueue = new StringQueue(10);
     }
 
+    /**
+     * To check if the queue have the same size like given in the constructor.
+     */
     @Test
     public void sizeTest() {
         Assert.assertEquals(10,stringQueue.size(),0.00001);
     }
 
+    /**
+     * Insert 10 elements into the Queue and check if there are 10 elements in it.
+     */
     @Test
     public void fillingTest1() {
-        //! adds ten placeholders to the string queue
         for(int i = 0; i < 10; i++) {
             stringQueue.offer("placeholder");
         }
         Assert.assertEquals(10,stringQueue.filling(),0.000001);
     }
 
+    /**
+     * Insert 7 elements into the Queue and check if there are 7 elements in it.
+     */
     @Test
     public void fillingTest2() {
-        //! adds seven placeholders to the string queue
         for(int i = 0; i < 7; i++) {
             stringQueue.offer("placeholder");
         }
         Assert.assertEquals(7,stringQueue.filling(),0.000001);
     }
 
+    /**
+     * Insert 10 elements into the Queue and check if there are 10 elements in it.
+     */
     @Test
     public void offerTest1() {
         Assert.assertTrue(stringQueue.offer("offerTest1"));
@@ -84,13 +94,5 @@ public class StringQueueTest {
         stringQueue.poll();
         stringQueue.poll();
         Assert.assertEquals(5,stringQueue.filling(),0.000001);
-<<<<<<< HEAD
-=======
-    }
-
-    @Test(expected = NoSuchElementException.class)
-    public static void xyz() {
->>>>>>> 1308107edc0aa11a11358d4ddbb60c26170935f8
-
     }
 }
