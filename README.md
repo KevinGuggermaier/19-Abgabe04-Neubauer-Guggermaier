@@ -6,8 +6,8 @@
 #### Task list: ####
 - [x] transfer the task list to the Markdown Readme
 - [x] add the template of the Queue implementation (Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue )
-- [ ] Go through the tasks step by step
-    - [ ] commit all changes
+- [x] Go through the tasks step by step
+    - [x] commit all changes
 - [x] correct the code
     - [x] find three mistakes
     - [x] optimise queue if necessary
@@ -28,18 +28,18 @@
     - [x] info log-message always when a method is called
     - [x] error log-message always when a bug appears
     - [x] results (from the console) in form of a picture in the documentation
-- [ ] Maven site documentation
-    - [ ] with JavaDoc code and JavaDoc test classes
-    - [ ] including a menu with links to the manual generated pages
-       - [ ] page shows the functionality of a queue
-    - [ ] put a picture of the maven site documentation in the report
-       - [ ] content of the manual generated page has to be obvious
-    - [ ] Markdown lab report
-    - [ ] like the template
-    - [ ] all steps included
-    - [ ] Github flavor:
-       - [ ] three lines python and java source code correct pictured
-    - [ ] generate a pdf
+- [x] Maven site documentation
+    - [x] with JavaDoc code and JavaDoc test classes
+    - [x] including a menu with links to the manual generated pages
+       - [x] page shows the functionality of a queue
+    - [x] put a picture of the maven site documentation in the report
+       - [x] content of the manual generated page has to be obvious
+    - [x] Markdown lab report
+    - [x] like the template
+    - [x] all steps included
+    - [x] Github flavor:
+       - [x] three lines python and java source code correct pictured
+    - [x] generate a pdf
 
 #### Project Information ####
-This project includes a java source code representing a queue with test cases. It is also capable of generating the necessary documentation. 
+This project includes a java source code representing a queue with test cases. It is also capable of generating the necessary documentation.
